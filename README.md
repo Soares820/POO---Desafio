@@ -5,31 +5,42 @@ Este projeto tem como objetivo modelar e implementar as funcionalidades do iPhon
 ## Diagrama UML
 
 O diagrama UML representa as classes e interfaces que compõem o sistema. Abaixo está a estrutura do diagrama:
-+---------------------+ | iPhone | +---------------------+ | - musicPlayer: MusicPlayer | | - telefone: Telefone | | - navegador: InternetBrowser | +---------------------+ | + playMusic() | | + makeCall() | | + browseInternet() | +---------------------+
 
++---------------------+
+|      iPhone         |
++---------------------+
+| - musicPlayer: MusicPlayer |
+| - phone: Telephone        |
+| - browser: InternetBrowser |
++---------------------+
+| + playMusic()           |
+| + makeCall()            |
+| + browseInternet()      |
++---------------------+
 
++---------------------+
+|    MusicPlayer       |
++---------------------+
+| + tocar()            |
+| + pausar()           |
+| + selecionarMusica(musica: String) |
++---------------------+
 
++---------------------+
+|    Telephone         |
++---------------------+
+| + ligar(numero: String)   |
+| + atender()               |
+| + iniciarCorreioVoz()     |
++---------------------+
 
-
-
-
-
-
-+---------------------+ | Leitor de música | +---------------------+ | + tocar() | | + pausa() | | + selecionarMúsica(música: String) | +---------------------+
-
-
-
-
-
-+---------------------+ | Telefone | +---------------------+ | + ligar(número: String) | | + atender() | | + iniciarCorreioVoz() | +---------------------+
-
-
-
-
-
-+---------------------+ | Navegador de Internet | +---------------------+ | + exibirPagina(url: String) | | + adicionarNovaAba() | | + atualizarPagina() | +---------------------+
-
-
++---------------------+
+|  InternetBrowser     |
++---------------------+
+| + exibirPagina(url: String)  |
+| + adicionarNovaAba()         |
+| + atualizarPagina()          |
++---------------------+
 
 
 
